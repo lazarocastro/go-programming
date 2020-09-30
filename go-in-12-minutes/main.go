@@ -112,6 +112,8 @@ func main() {
 	fmt.Println(point)
 	fmt.Println(&point)
 
+	bar()
+
 }
 
 // creating functions
@@ -126,4 +128,8 @@ func sqrt(x float64) (float64, error) {
 	}
 
 	return math.Sqrt(x), nil
+}
+
+func bar() {
+	fmt.Println("This is a test")
 }
